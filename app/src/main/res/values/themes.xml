@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Onchain" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="android:statusBarColor">@color/color_0a1e3d</item>
+        <item name="android:windowBackground">@color/color_0a1e3d</item>
+    </style>
+</resources>
