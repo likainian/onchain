@@ -613,7 +613,7 @@ object JsonConfig {
             "rates": [
                 {
                     "amount": "1000",
-                    "rate": "10603.900000"
+                    "rate": "106030.900000"
                 }
             ],
             "time_stamp": 1602080062

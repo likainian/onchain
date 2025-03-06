@@ -1,10 +1,10 @@
 package com.interview.onchain.bean
 
+import com.interview.onchain.base.BaseResponse
+
 data class WalletResponse(
-    val ok: Boolean,
-    val warning: String,
     val wallet: List<WalletInfo>
-)
+): BaseResponse()
 
 data class WalletInfo(
     val currency: String,
@@ -12,9 +12,13 @@ data class WalletInfo(
 )
 
 data class RateResponse(
-    val ok: Boolean,
-    val warning: String,
-    val tiers: List<RateInfo>
+    val tiers: List<RateBean>
+): BaseResponse()
+
+data class RateBean(
+    val from_currency:String,
+    val to_currency:String,
+    val rates:List<RateInfo>,
 )
 
 data class RateInfo(

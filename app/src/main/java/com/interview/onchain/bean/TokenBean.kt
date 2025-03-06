@@ -1,10 +1,10 @@
 package com.interview.onchain.bean
 
+import com.interview.onchain.base.BaseResponse
+
 data class TokenResponse(
-    val ok: Boolean,
-    val warning: String,
     val currencies: List<TokenBean>,
-)
+): BaseResponse()
 
 data class TokenBean(
     val coin_id: String,

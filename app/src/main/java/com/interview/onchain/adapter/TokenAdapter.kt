@@ -12,7 +12,7 @@ import com.interview.onchain.entry.TokenEntry
 
 class TokenAdapter : RecyclerView.Adapter<TokenAdapter.TokenViewHolder>() {
 
-    var data = ArrayList<TokenEntry>()
+    var data = mutableListOf<TokenEntry>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TokenViewHolder {
         val bind = DataBindingUtil.inflate<ItemTokenBinding>(
